@@ -65,7 +65,7 @@
                                     <outlet property="descriptionLabel" destination="4qz-k8-djs" id="i4I-iI-VFt"/>
                                     <outlet property="nameLabel" destination="SE7-pi-QG2" id="x7Q-Wr-Dwy"/>
                                     <outlet property="symbolLabel" destination="VS4-gi-szO" id="R8h-UM-bvb"/>
-                                    <segue destination="9CF-ZI-z0x" kind="show" id="gAf-g9-SAl"/>
+                                    <segue destination="9CF-ZI-z0x" kind="show" identifier="EditEmoji" id="gAf-g9-SAl"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -109,6 +109,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textEditingChanged:" destination="9CF-ZI-z0x" eventType="editingDidBegin" id="aXk-F4-0YG"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -137,6 +140,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textEditingChanged:" destination="9CF-ZI-z0x" eventType="editingChanged" id="Bkk-YD-fTG"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -163,6 +169,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textEditingChanged:" destination="9CF-ZI-z0x" eventType="editingChanged" id="l9p-Kp-eVg"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -189,6 +198,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textEditingChanged:" destination="9CF-ZI-z0x" eventType="editingChanged" id="2fn-Fb-gao"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
