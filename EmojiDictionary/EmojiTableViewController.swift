@@ -35,6 +35,10 @@ class EmojiTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         self.navigationItem.leftBarButtonItem = self.editButtonItem
+        
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 44.0
+
     }
 
     // MARK: - Table view data source
