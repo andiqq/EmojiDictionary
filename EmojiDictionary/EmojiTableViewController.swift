@@ -95,7 +95,13 @@ class EmojiTableViewController: UITableViewController {
         if segue.identifier == "EditEmoji" {
             let indexPath = tableView.indexPathForSelectedRow!
             let emoji = emojis[indexPath.row]
-            let addEditEmojiTableViewController = segue.destination as! AddEditEmojiTableViewController
+            
+            // This code is working
+            let navViewController = segue.destination as! UINavigationController
+            let addEditEmojiTableViewController = navViewController.topViewController as! AddEditEmojiTableViewController
+            
+           // This is the code that was given in the book - leads to runtime error
+           // let addEditEmojiTableViewController = segue.destination as! AddEditEmojiTableViewController
             addEditEmojiTableViewController.emoji = emoji
         }
     }
