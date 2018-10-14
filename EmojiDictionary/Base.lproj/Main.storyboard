@@ -77,7 +77,7 @@
                     <navigationItem key="navigationItem" title="EmojiDictionary" largeTitleDisplayMode="always" id="4Ws-XB-gj9">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="2aA-K3-U9H">
                             <connections>
-                                <segue destination="E8D-WA-unL" kind="presentation" identifier="AddEmoji" id="lFO-Ve-wB8"/>
+                                <segue destination="9CF-ZI-z0x" kind="show" identifier="AddEmoji" id="WlE-kr-ozd"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -244,28 +244,10 @@
             </objects>
             <point key="canvasLocation" x="2312.8000000000002" y="144.3778110944528"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Nbi-g6-euo">
-            <objects>
-                <navigationController id="E8D-WA-unL" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="H1Y-9g-cY9">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qUJ-Wv-TAg">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </toolbar>
-                    <connections>
-                        <segue destination="9CF-ZI-z0x" kind="relationship" relationship="rootViewController" id="bHW-Fx-YAI"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UcJ-Su-L0F" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1361" y="145"/>
-        </scene>
         <!--EmojiDictionary-->
         <scene sceneID="FLh-pB-uEp">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tyd-Ap-TjB" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController title="EmojiDictionary" id="JKV-IG-uYh" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="q7Q-O3-vin">
                         <rect key="frame" x="0.0" y="20" width="375" height="96"/>
@@ -275,12 +257,11 @@
                         <segue destination="75A-JK-Kc0" kind="relationship" relationship="rootViewController" id="NxR-kQ-gKB"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tyd-Ap-TjB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-407" y="141"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="gAf-g9-SAl"/>
+        <segue reference="WlE-kr-ozd"/>
     </inferredMetricsTieBreakers>
 </document>
